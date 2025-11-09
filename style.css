@@ -58,47 +58,6 @@ nav a:hover {
 }*/
 
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-}
-.product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.product-card h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-.product-card p {
-    color: #555;
-    margin: 0.5rem 0;
-}
-.product-card button {
-    background-color: blue;
-    /*background-color: #4a2c2a;*/
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.product-card button:hover {
-    background-color: aqua;
-}
 .cart {
     position: fixed;
     top: 1rem;
@@ -168,6 +127,49 @@ footer {
 
 
 /* Products */
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.product-card p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+.product-card button {
+    background-color: blue;
+    /*background-color: #4a2c2a;*/
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-card button:hover {
+    background-color: aqua;
+}/*
 .products {
     padding: 4rem 5%;
     text-align: center;
@@ -205,7 +207,7 @@ footer {
     transition: 0.3s;
 }
 .product-card button:hover { background: #c68997; }
-
+*/
 /* Responsive */
 @media (max-width: 768px) {
     .header { flex-direction: column; text-align: center; }
