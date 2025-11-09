@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melody's Wool</title>
+    <link rel="stylesheet" href="About.html">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
@@ -15,30 +16,53 @@
         <br></br>
         <br></br>
         <br></br>
-        <!--<h1>Melody's Wool</h1>
-        <p>Your one-stop shop for premium wool products</p>
-        -->
+        
+        
     </header>
-    <nav>
-        <a href="#home">Home</a>
+    <nav class="nav">
+        <a href="index.html">Home</a>        
+        <a href="About.html" target="_top">About</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
     </nav>
-    <div class="cart">
-        <h3>Cart</h3>
-        <p id="cart-items">0 items</p>
-    </div>
     
-    <section class="details">
-        <h1 class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore facere corrupti impedit minima, unde doloremque earum itaque mollitia nulla, modi, eaque veritatis laboriosam est voluptatem totam veniam delectus necessitatibus?</h1>
-        <p class="details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nisi, cum nobis a asperiores beatae? Tempora voluptate facilis ut, eaque dignissimos distinctio fugit, sapiente consequatur corrupti repudiandae beatae magnam omnis?</p>
-        <h1 class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla modi voluptas maxime ex quod voluptates rem quos nemo maiores? Autem, nemo ea. Aspernatur dolorum laboriosam quasi non laborum accusantium deleniti.</h1>
-        <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit voluptates enim, eaque consequatur delectus amet. Accusantium adipisci, consequatur nulla voluptas quis tempore id eos illo similique nesciunt, enim ratione.</p>
-        <h1 class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore facere corrupti impedit minima, unde doloremque earum itaque mollitia nulla, modi, eaque veritatis laboriosam est voluptatem totam veniam delectus necessitatibus?</h1>
-        <p class="details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nisi, cum nobis a asperiores beatae? Tempora voluptate facilis ut, eaque dignissimos distinctio fugit, sapiente consequatur corrupti repudiandae beatae magnam omnis?</p>
-        <h1 class="details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla modi voluptas maxime ex quod voluptates rem quos nemo maiores? Autem, nemo ea. Aspernatur dolorum laboriosam quasi non laborum accusantium deleniti.</h1>
-        
+
+    <div class="cart">
+    <h3>🧺 Cart</h3>
+    <p id="cart-items">0 items - R0.00</p>
+  </div>
+    
+    
+
+    
+
+    <section id="about" class="about">
+        <h2>About Melody's Wool</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>At Melody's Wool we source the finest natural fibers from local farms. Every skein is dyed by hand with eco-friendly colors, ensuring vibrant hues that last.</p>
+                <p>Whether you're a seasoned knitter or just starting out, we have the perfect wool for scarves, sweaters, blankets, and more.</p>
+            </div>
+        </div>
     </section>
+
+
+    <section id="home" class="hero">
+        <h2>Handcrafted Warmth, One Stitch at a Time</h2>
+        <p>Soft, sustainable wool for all your knitting dreams.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+
+    <section id="products" class="products">
+        <h2>Our Wool Collection</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected by JS -->
+        </div>
+    </section>
+
+
+    
 
     <section class="products">
         <div class="product-card">

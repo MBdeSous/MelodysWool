@@ -1,7 +1,7 @@
 body {
-    background-image: url("Images/3.jpg");
+    /*background-image: url("Images/3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 250%;
+    background-size: 100% 250%;*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ header {
     /*background-color: #4a2c2a;*/
     background-image: url("Images/WideWoolShoppe.png");
     background-size: 100% 110%;
-    color: white;
+    color: black;
     text-align: center;
     padding: 1rem;
 }
@@ -23,13 +23,29 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
-nav {
+
+/* Nav */
+.nav {
+    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); 
+    text-align: center;
+    padding: 1rem;
+}
+.nav a {
+    margin: 0 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav a:hover { color: white; 
+}
+/*nav {
     background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); 
     padding: 1rem;
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    gap: 1rem; /* Adds slight spacing between items, adjust as needed */
+    justify-content: center; /* Centers items horizontally 
+    align-items: center; /* Centers items vertically 
+    gap: 1rem; /* Adds slight spacing between items, adjust as needed 
 }
 nav a {
     color: white;
@@ -39,7 +55,9 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
-}
+}*/
+
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -100,4 +118,97 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1600x600/f4c2c2/fff?text=Soft+Wool+Background') center/cover no-repeat;
+    text-align: center;
+    padding: 1rem 1rem;
+    color: #333;
+}
+.hero h2  {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+.hero   {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc);;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn:hover { background: #faf0f2; }
+
+
+.about {
+    padding: 4rem 5%;
+    background: #faf0f2;
+}/*
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}*/
+.about-text p { margin-bottom: 1rem; font-size: 1.1rem; }
+.about-image img { width: 100%; border-radius: 12px; }
+
+
+/* Products */
+.products {
+    padding: 4rem 5%;
+    text-align: center;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.product-card:hover { transform: translateY(-8px); }
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card h3 { padding: 1rem 0 0.5rem; font-size: 1.3rem; }
+.product-card p { color: #d8a7b1; font-weight: 600; padding-bottom: 1rem; }
+.product-card button {
+    background: #d8a7b1;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.product-card button:hover { background: #c68997; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header { flex-direction: column; text-align: center; }
+    .about-grid { grid-template-columns: 1fr; }
+    .hero h2 { font-size: 2.8rem; }
 }
