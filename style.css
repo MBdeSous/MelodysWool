@@ -197,3 +197,7 @@ body {
     .about-grid { grid-template-columns: 1fr; }
     .hero h2 { font-size: 2.8rem; }
 }
+
+.tel {
+    text-align: center;
+}
