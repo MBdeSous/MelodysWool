@@ -95,11 +95,11 @@ body {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 25rem;
     align-items: center;
 }
 .about-text p { margin-bottom: 1rem; font-size: 1.1rem; }
-.about-image img { width: 100%; border-radius: 12px; }
+.about-image img { width: 50%; border-radius: 12px; }
 
 /* Products */
 .products {

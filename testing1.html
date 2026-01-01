@@ -1,261 +1,117 @@
-<!--<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Melody's Wool</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody's Wool Shoppe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
-
 <body>
-  <header>
-    <h1>Melody's Wool</h1>
-    <p>Your one-stop shop for premium wool products</p>
-  </header>
+    <header class="header">
+        <div class="logo">
+            <h1>Melody's Wool Shoppe</h1>
+            <p>Your one-stop shop for premium wool products</p>
+        </div>
+        
+    </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Contact</a>
+    </nav>
 
-  <div class="cart">
-    <h3>🧺 Cart</h3>
-    <p id="cart-items">0 items - R0.00</p>
-  </div>
+    <section id="home" class="hero">
+        <h2>Handcrafted Warmth, One Stitch at a Time</h2>
+        <p>Soft, sustainable wool for all your knitting dreams.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
 
-  <section class="details" id="home">
-    <h1>Welcome to Melody’s Wool</h1>
-    <p>We bring you the finest wool in vibrant colors and soft textures, perfect for your creative projects. Explore our handcrafted collection and discover warmth in every thread.</p>
-  </section>
+    <section id="about" class="about">
+        <h2>About Melody's Wool</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>At Melody's Wool we source the finest natural fibers from local farms. Every skein is dyed by hand with eco-friendly colors, ensuring vibrant hues that last.</p>
+                <p>Whether you're a seasoned knitter or just starting out, we have the perfect wool for scarves, sweaters, blankets, and more.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://woolcraft.co.za/wp-content/uploads/2021/04/3.jpg" alt="Hand-dyed wool">
+            </div>
+        </div>
 
-  <section class="products" id="products">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=Pink+Wool" alt="BigPinkWool" />
-      <h3>Big Pink Wool</h3>
-      <p>R19.99</p>
-      <button onclick="addToCart('Big Pink Wool', 19.99)">Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=Funny+Colour" alt="FunnyColourWool" />
-      <h3>Funny Colour Wool</h3>
-      <p>R49.99</p>
-      <button onclick="addToCart('Funny Colour Wool', 49.99)">Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=Wooly+Wool" alt="WoolyWool" />
-      <h3>Wooly Wool</h3>
-      <p>R14.99</p>
-      <button onclick="addToCart('Wooly Wool', 14.99)">Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=Blue+Wool" alt="Blue Wool" />
-      <h3>Blue Wool</h3>
-      <p>R19.99</p>
-      <button onclick="addToCart('Blue Wool', 19.99)">Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=Orange+Wool" alt="Orange Wool" />
-      <h3>Orange Wool</h3>
-      <p>R49.99</p>
-      <button onclick="addToCart('Orange Wool', 49.99)">Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/180?text=More+Wooly+Wool" alt="More Wooly Wool" />
-      <h3>More Wooly Wool</h3>
-      <p>R14.99</p>
-      <button onclick="addToCart('More Wooly Wool', 14.99)">Add to Cart</button>
-    </div>
-  </section>
+        <div>   
 
-  <footer id="contact">
-    <p>&copy; 2025 Melody's Wool. All rights reserved. | Contact us at <a href="mailto:info@melodyswool.co.za" style="color:white; text-decoration:underline;">info@melodyswool.co.za</a></p>
-  </footer>
+            <h2>Welcome to Melody’s Wool</h2>
+            <p> 
+                <br><br> 
+                Port Elizabeth’s cozy corner for creativity, comfort, and community.
+                Nestled in the heart of the Bay, Melody’s Wool shoppe is more than just a shop, it’s a place where warmth and imagination come 
+                together, one stitch at a time. Whether you’re an experienced crafter or just picking up your first set of needles, you’ll 
+                find inspiration in every color, texture, and skein on our shelves. Our shop began as a small dream in Melody’s family living 
+                room. 
+                <br><br>
+                Melody, a lifelong knitter and mother of two, started crocheting scarves and blankets for neighbors during a particularly 
+                chilly Eastern Cape winter. Word spread fast, not just about her skill, but about the laughter, tea, and kindness that always came 
+                with every bundle of yarn. Soon, her hobby turned into a heartfelt business, and Melody’s Wool was born. 
+                <br><br>
+                Today, we carry all kinds of wool and yarns, from soft baby pastels to chunky winter blends, along with knitting needles, patterns, 
+                and accessories to bring your ideas to life. But what truly makes us special is our community — families, friends, and crafters of 
+                all ages who stop by not just to shop, but to share stories, learn something new, and leave a little happier.At Melody’s Wool, we 
+                believe every thread has a story — and we’d love to be part of yours. 
+                <br><br>
+                Come visit us at:
+                <br> 
+                <a href="https://www.google.com/search?q=Melodys+Wool+Shoppe&sca_esv=9fc2715267f25e5e&rlz=1C1JZAP_enZA936ZA936&biw=958&bih=910&sxsrf=AE3TifPVHZqoe38kCK098PgagkHuLVGdAQ%3A1762694375055&ei=55QQadyXA76AhbIPxeCf2A4&ved=0ahUKEwicp8qglOWQAxU-QEEAHUXwB-sQ4dUDCBE&uact=5&oq=Melodys+Wool+Shoppe&gs_lp=Egxnd3Mtd2l6LXNlcnAiE01lbG9keXMgV29vbCBTaG9wcGUyERAuGIAEGJECGMcBGIoFGK8BMgkQABiABBgKGAsyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIIEAAYgAQYogRIgwZQAFgAcAB4AJABAJgBtgKgAbYCqgEDMy0xuAEDyAEA-AEC-AEBmAIBoAK8ApgDAJIHAzMtMaAHjAuyBwMzLTG4B7wCwgcDMi0xyAcE&sclient=gws-wiz-serp">"Shop G20 6th Avenue Shopping Centre, Corner of 6th Avenue and, Heugh Rd, Walmer, Gqeberha, 6065"</a>
+                <br><br>
+                Have a chat, touch the wool, and feel right at home.</p>
 
-  <script>
-    let cartCount = 0;
-    let total = 0;
+        </div>
 
-    function addToCart(item, price) {
-      cartCount++;
-      total += price;
-      document.getElementById("cart-items").textContent = `${cartCount} item${cartCount > 1 ? 's' : ''} - R${total.toFixed(2)}`;
-      alert(`${item} added to cart!`);
-    }
-  </script>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Find us at:</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected by JS -->
+        </div>
+    </section>
+
+
+
+
+
+
+<div class="social-container">
+    <a href="https://www.facebook.com/profile.php?id=100071694645078" target="_blank" class="social-card facebook">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+    </a>
+
+    <a href="https://wa.me/27825743778" target="_blank" class="social-card whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <a href="https://www.tiktok.com/@melodyswoolshoppe" target="_blank" class="social-card tiktok">
+        <i class="fab fa-tiktok"></i>
+        <span>TikTok</span>
+    </a>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+    <footer class="footer">
+        <p>© 2025 Melody's Wool. All rights reserved.</p>
+    </footer>
+
+    
 </body>
 </html>
-  <style>
-    /* ====== GLOBAL STYLES ====== */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff8f4;
-      color: #444;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f9d5d3, #f7a9a8);
-      color: #fff;
-      text-align: center;
-      padding: 6rem 1rem 4rem;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    /* ====== NAVIGATION ====== */
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #f57b72;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #f9d5d3;
-      color: #222;
-      border-radius: 8px;
-    }
-
-    /* ====== CART ====== */
-    .cart {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #fff;
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .cart h3 {
-      margin: 0 0 0.3rem;
-      color: #f57b72;
-    }
-
-    /* ====== DETAILS SECTION ====== */
-    section.details {
-      padding: 4rem 2rem;
-      text-align: center;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .details h1 {
-      font-size: 1.8rem;
-      color: #f57b72;
-      margin-bottom: 1rem;
-    }
-
-    .details p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 2.5rem;
-    }
-
-    /* ====== PRODUCTS SECTION ====== */
-    section.products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 4rem 2rem;
-      background-color: #fff;
-    }
-
-    .product-card {
-      background: #fffaf9;
-      border: 1px solid #f4d2cf;
-      border-radius: 15px;
-      text-align: center;
-      padding: 1.5rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    .product-card img {
-      width: 100%;
-      max-width: 180px;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .product-card h3 {
-      color: #333;
-      font-size: 1.2rem;
-    }
-
-    .product-card p {
-      color: #888;
-      margin: 0.5rem 0 1rem;
-      font-weight: 600;
-    }
-
-    .product-card button {
-      background-color: #f57b72;
-      border: none;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .product-card button:hover {
-      background-color: #e55d53;
-    }
-
-    /* ====== FOOTER ====== */
-    footer {
-      background-color: #f57b72;
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      letter-spacing: 0.5px;
-    }
-
-    /* ====== RESPONSIVE ====== */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav a {
-        padding: 0.8rem 1rem;
-      }
-
-      .details h1 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
--->
-
