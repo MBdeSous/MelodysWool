@@ -1,107 +1,83 @@
+
+        /* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-    /*background-image: url("Images/3.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 250%;*/
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf0;
+    color: #444;
+    line-height: 1.6;
 }
-.details{
+
+/* Header */
+.header {
+    background: #d8a7b1;
     color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-header {
-    /*background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); /* Rainbow*/
-    /*background-color: #4a2c2a;*/
-    background-image: url("Images/WideWoolShoppe.png");
-    background-size: 100% 110%;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-}
-header h1 {
-    margin: 0;
+.logo h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
+}
+.logo p { font-size: 0.9rem; opacity: 0.9; }
+
+/* Cart */
+.cart {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+#cart-count {
+    background: #fff;
+    color: #d8a7b1;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 8px;
+    font-size: 0.9rem;
 }
 
 /* Nav */
 .nav {
-    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); 
+    background: #f5e1e3;
     text-align: center;
     padding: 1rem;
 }
 .nav a {
     margin: 0 1.5rem;
     text-decoration: none;
-    color: black;
+    color: #555;
     font-weight: 600;
     transition: color 0.3s;
 }
-.nav a:hover { color: white; 
-}
-/*nav {
-    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); 
-    padding: 1rem;
-    display: flex;
-    justify-content: center; /* Centers items horizontally 
-    align-items: center; /* Centers items vertically 
-    gap: 1rem; /* Adds slight spacing between items, adjust as needed 
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1.1rem;
-}
-nav a:hover {
-    text-decoration: underline;
-}*/
-
-
-.cart {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-footer {
-    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc); /* Rainbow*/
-    /*background-color: #4a2c2a;*/
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: static;
-    bottom: 0;
-    width: 100%;
-}
+.nav a:hover { color: #d8a7b1; }
 
 /* Hero */
 .hero {
     background: url('https://via.placeholder.com/1600x600/f4c2c2/fff?text=Soft+Wool+Background') center/cover no-repeat;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 6rem 2rem;
     color: #333;
 }
-.hero h2  {
+.hero h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: black;
-}
-.hero   {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: black;
 }
 .btn {
     display: inline-block;
-    background: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc00cc);;
-    color: black;
+    background: #d8a7b1;
+    color: white;
     padding: 0.8rem 2rem;
     border-radius: 30px;
     text-decoration: none;
@@ -109,67 +85,23 @@ footer {
     font-weight: 600;
     transition: 0.3s;
 }
-.btn:hover { background: #faf0f2; }
+.btn:hover { background: #c68997; }
 
-
+/* About */
 .about {
     padding: 4rem 5%;
     background: #faf0f2;
-}/*
+}
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-}*/
-.about-text p { margin-bottom: 1rem; font-size: 2rem; }
+}
+.about-text p { margin-bottom: 1rem; font-size: 1.1rem; }
 .about-image img { width: 100%; border-radius: 12px; }
 
-
 /* Products */
-
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-}
-.product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.product-card h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-}
-.product-card p {
-    color: #555;
-    margin: 0.5rem 0;
-}
-.product-card button {
-    background-color: blue;
-    /*background-color: #4a2c2a;*/
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.product-card button:hover {
-    background-color: aqua;
-}/*
 .products {
     padding: 4rem 5%;
     text-align: center;
@@ -207,27 +139,61 @@ footer {
     transition: 0.3s;
 }
 .product-card button:hover { background: #c68997; }
-*/
+
+/* Footer */
+.footer {
+    background: #555;
+    color: #eee;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/*cards*/
+.social-container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    width: 180px;
+    height: 180px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.social-card i {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.social-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Platform colours */
+.facebook { background: #1877f2; }
+.whatsapp { background: #25d366; }
+.tiktok { background: #000; }
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .header { flex-direction: column; text-align: center; }
     .about-grid { grid-template-columns: 1fr; }
     .hero h2 { font-size: 2.8rem; }
-}
-.contact-card
-{
-    align-items: center;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-
-    margin-left: 3rem;
-    padding: 3rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.contact-card p {
-    color: #555;
-    margin: 0.5rem 0;
 }
