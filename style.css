@@ -190,6 +190,7 @@ body {
 }
 
 /* Platform colours */
+.tel { background: #808080 ; }
 .facebook { background: #1877f2; }
 .whatsapp { background: #25d366; }
 .tiktok { background: #000; }
